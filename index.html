@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar - October 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    .calendar {
+      width: 350px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .calendar-header button {
+      background: white;
+      color: #007bff;
+      border: none;
+      font-size: 18px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      padding: 10px;
+    }
+
+    .day {
+      background-color: #e9ecef;
+      border-radius: 5px;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calendar">
+    <div class="calendar-header">
+      <button class="prev-month">&lt;</button>
+      <span class="current-month">October 2025</span>
+      <button class="next-month">&gt;</button>
+    </div>
+
+    <div class="calendar-grid">
+      <!-- Days of the week headers -->
+      <div class="day">Mon</div>
+      <div class="day">Tue</div>
+      <div class="day">Wed</div>
+      <div class="day">Thu</div>
+      <div class="day">Fri</div>
+      <div class="day">Sat</div>
+      <div class="day">Sun</div>
+
+      <!-- Days of the month will be dynamically populated here -->
+    </div>
+  </div>
+
+</body>
+</html>
